@@ -42,8 +42,8 @@ void gethalfs(int num, int * first, int * last)
     n = getn(num);
     po = (int) pow(10, n/2);
 
-    *first = num / po;
-    *last  = num - *first * po;
+   *last = num / po;
+    *first  = (num - *last) / po;
 
     return;
 }
